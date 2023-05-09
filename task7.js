@@ -11,28 +11,28 @@ let s1 = mod.addShop("Shop_1", "Test address 1");
 let s2 = mod.addShop("Shop_2", "Test address 2");
 let s3 = mod.addShop("Shop_3", "Test address 3");
 
-// Список лікарень
+// Список магазинів
 mod.getShop();
 
-// Видалення лікарень
+// Видалення магазинів
 console.log("Видалення магазину: Shop_2");
 mod.removeShop("Shop_2", "Test address 2");
 
-// Список лікарень
+// Список магазинів
 mod.getShop();
 
-// Зміна лікарень
-console.log("Зміна лікарні: Shop_3");
+// Зміна магазинів
+console.log("Зміна магазину: Shop_3");
 mod.editShop("Shop_3", "Test address 3", "New shop name", "New address");
 
-// Список лікарень
+// Список магазинів
 mod.getShop();
 
-// Пошук лікарень
+// Пошук магазинів
 let shop1 = mod.findShop("Shop_1", "Test address 1");
-console.log(`Пошук лікарні Shop_1: ${shop1 !== -1 ? "знайдено" : "не знайдено"}`);
+console.log(`Пошук магазину Shop_1: ${shop1 !== -1 ? "знайдено" : "не знайдено"}`);
 let shop2 = mod.findShop("Shop_7", "Test address 7");
-console.log(`Пошук лікарні Shop_7: ${shop2 !== -1 ? "знайдено" : "не знайдено"}`);
+console.log(`Пошук магазину Shop_7: ${shop2 !== -1 ? "знайдено" : "не знайдено"}`);
 
 ////////////////////////////////////////////////////////////////////////////////////
 
